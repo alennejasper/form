@@ -38,6 +38,8 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
     TextEditingController txtFname = TextEditingController();
+
+    TextEditingController txtMname = TextEditingController();
   
     TextEditingController txtLname = TextEditingController();
 
@@ -68,6 +70,20 @@ class _MyHomePageState extends State<MyHomePage> {
                                 ),
                             ),
                         ),
+
+                        Padding(
+                            padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 50),
+                        
+                            child: TextField(
+                                controller: txtMname,
+                            
+                                decoration: const InputDecoration(
+                                    border: OutlineInputBorder(),
+                                    
+                                    hintText: "Enter your middle name here.",
+                                ),
+                            ),
+                        ),
                         
                         Padding(
                             padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 50),
@@ -89,7 +105,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             child: ElevatedButton(
                                 onPressed: (){
                                     Fluttertoast.showToast(
-                                        msg: "The name entered was: ${txtFname.text} ${txtLname.text}.",
+                                        msg: "The name entered was: ${txtFname.text} ${txtMname.text} ${txtLname.text}.",
                                         
                                         toastLength: Toast.LENGTH_SHORT,
                                         

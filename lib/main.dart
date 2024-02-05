@@ -139,7 +139,7 @@ class _MyHomePageState extends State<MyHomePage> {
               child: ElevatedButton(
                   onPressed: (){
                     Fluttertoast.showToast(
-                        msg: "The name is: ${txtFname.text} + ${txtLname.text}",
+                        msg: "The name is: ${txtFname.text} ${txtLname.text}",
                         toastLength: Toast.LENGTH_SHORT,
                         gravity: ToastGravity.CENTER,
                         timeInSecForIosWeb: 5,

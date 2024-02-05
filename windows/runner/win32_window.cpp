@@ -179,6 +179,7 @@ LRESULT CALLBACK Win32Window::WndProc(HWND const window, UINT const message, WPA
 }
 
 LRESULT
+
 Win32Window::MessageHandler(HWND hwnd, UINT const message, WPARAM const wparam, LPARAM const lparam) noexcept{
     switch (message){
         case WM_DESTROY:
